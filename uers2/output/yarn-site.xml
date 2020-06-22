@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><configuration>
+<property><name>yarn.scheduler.capacity.resource-calculator</name><value>org.apache.hadoop.yarn.util.resource.DominantResourceCalculator</value><final>false</final><source>programmatically</source></property>
+<property><name>yarn.scheduler.capacity.per-node-heartbeat.multiple-assignments-enabled</name><value>true</value><final>false</final><source>programmatically</source></property>
+<property><name>yarn.resourcemanager.scheduler.class</name><value>org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler</value><final>false</final><source>programmatically</source></property>
+</configuration>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><configuration>
+<property><name>yarn.scheduler.capacity.root.users.maximum-capacity</name><value>100</value><final>false</final><source>programmatically</source></property>
+<property><name>yarn.scheduler.capacity.root.default.capacity</name><value>50.000</value><final>false</final><source>programmatically</source></property>
+<property><name>yarn.scheduler.capacity.root.default.ordering-policy</name><value>fair</value><final>false</final><source>programmatically</source></property>
+<property><name>yarn.scheduler.capacity.root.users.capacity</name><value>50.000</value><final>false</final><source>programmatically</source></property>
+<property><name>yarn.scheduler.capacity.root.default.maximum-capacity</name><value>100</value><final>false</final><source>programmatically</source></property>
+<property><name>yarn.scheduler.capacity.root.queues</name><value>default,users</value><final>false</final><source>programmatically</source></property>
+<property><name>yarn.scheduler.capacity.root.maximum-capacity</name><value>100</value><final>false</final><source>programmatically</source></property>
+<property><name>yarn.scheduler.capacity.maximum-am-resource-percent</name><value>0.5</value><final>false</final><source>programmatically</source></property>
+</configuration>

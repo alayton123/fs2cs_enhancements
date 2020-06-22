@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<allocations>
+    <queue name="root">
+        <weight>1.0</weight>
+        <schedulingPolicy>drf</schedulingPolicy>
+        <aclSubmitApps>*</aclSubmitApps>
+        <aclAdministerApps>*</aclAdministerApps>
+        <queue name="default">
+            <maxResources>50.0%</maxResources>
+            <weight>10.0</weight>
+            <schedulingPolicy>drf</schedulingPolicy>
+        </queue>
+        <queue name="users" type="parent">
+            <maxResources>75.0%</maxResources>
+            <weight>30.0</weight>
+            <schedulingPolicy>drf</schedulingPolicy>
+            <queue name="alice">
+                <minResources>32768 mb, 8 vcores</minResources>
+                <weight>1.0</weight>
+                <schedulingPolicy>drf</schedulingPolicy>
+            </queue>
+            <queue name="bob">
+                <weight>1.0</weight>
+                <schedulingPolicy>drf</schedulingPolicy>
+            </queue>
+            <queue name="charlie">
+                <maxResources>25.0%</maxResources>
+                <weight>1.0</weight>
+                <schedulingPolicy>drf</schedulingPolicy>
+            </queue>
+        </queue>
+        <queue name="users2">
+            <weight>10.0</weight>
+            <schedulingPolicy>drf</schedulingPolicy>
+            <queue name="dave">
+                <minResources>8192 mb, 2 vcores</minResources>
+                <maxResources>20480 mb, 8 vcores</maxResources>
+                <weight>1.0</weight>
+                <schedulingPolicy>drf</schedulingPolicy>
+            </queue>
+            <queue name="eric">
+                <maxResources>55.0% memory, 30.0% cpu</maxResources>
+                <weight>1.0</weight>
+                <schedulingPolicy>drf</schedulingPolicy>
+            </queue>
+        </queue>
+    </queue>
+    <defaultQueueSchedulingPolicy>fair</defaultQueueSchedulingPolicy>
+    <queuePlacementPolicy>
+        <rule name="specified" create="true"/>
+        <rule name="nestedUserQueue" create="true">
+            <rule name="default" create="true" queue="users"/>
+        </rule>
+        <rule name="default"/>
+    </queuePlacementPolicy>
+</allocations>

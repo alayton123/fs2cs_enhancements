@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><configuration>
+<property><name>yarn.scheduler.capacity.root.users.bob.maximum-capacity</name><value>100</value><final>false</final><source>programmatically</source></property>
+<property><name>yarn.scheduler.capacity.root.users.bob.capacity</name><value>33.334</value><final>false</final><source>programmatically</source></property>
+<property><name>yarn.scheduler.capacity.root.maximum-capacity</name><value>100</value><final>false</final><source>programmatically</source></property>
+<property><name>yarn.scheduler.capacity.root.queues</name><value>default,users</value><final>false</final><source>programmatically</source></property>
+<property><name>yarn.scheduler.capacity.root.users.charlie.maximum-capacity</name><value>100</value><final>false</final><source>programmatically</source></property>
+<property><name>yarn.scheduler.capacity.root.users.charlie.ordering-policy</name><value>fair</value><final>false</final><source>programmatically</source></property>
+<property><name>yarn.scheduler.capacity.root.users.alice.maximum-capacity</name><value>100</value><final>false</final><source>programmatically</source></property>
+<property><name>yarn.scheduler.capacity.root.users.charlie.capacity</name><value>33.333</value><final>false</final><source>programmatically</source></property>
+<property><name>yarn.scheduler.capacity.root.users.queues</name><value>charlie,alice,bob</value><final>false</final><source>programmatically</source></property>
+<property><name>yarn.scheduler.capacity.root.default.maximum-capacity</name><value>100</value><final>false</final><source>programmatically</source></property>
+<property><name>yarn.scheduler.capacity.root.default.capacity</name><value>25.000</value><final>false</final><source>programmatically</source></property>
+<property><name>yarn.scheduler.capacity.root.users.alice.ordering-policy</name><value>fair</value><final>false</final><source>programmatically</source></property>
+<property><name>yarn.scheduler.capacity.root.users.bob.ordering-policy</name><value>fair</value><final>false</final><source>programmatically</source></property>
+<property><name>yarn.scheduler.capacity.root.users.maximum-capacity</name><value>100</value><final>false</final><source>programmatically</source></property>
+<property><name>yarn.scheduler.capacity.maximum-am-resource-percent</name><value>0.5</value><final>false</final><source>programmatically</source></property>
+<property><name>yarn.scheduler.capacity.root.users.alice.capacity</name><value>33.333</value><final>false</final><source>programmatically</source></property>
+<property><name>yarn.scheduler.capacity.root.default.ordering-policy</name><value>fair</value><final>false</final><source>programmatically</source></property>
+<property><name>yarn.scheduler.capacity.root.users.capacity</name><value>75.000</value><final>false</final><source>programmatically</source></property>
+</configuration>
